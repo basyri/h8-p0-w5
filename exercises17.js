@@ -16,14 +16,13 @@
 
 function kaliTerusRekursif(angka) {
     // you can only write your code here!
-    var stringed = String(angka).split('')
+    var stringed = String(angka)
     // console.log(stringed)
     var multipleRes = 1
     for (var i = 0; i < stringed.length; i++) {
         multipleRes *= stringed[i]
     }
-    // console.log(multipleRes)
-    // console.log(multipleRes.length)
+
     if (String(multipleRes).length === 1) {
         return Number(multipleRes)
     } else {
